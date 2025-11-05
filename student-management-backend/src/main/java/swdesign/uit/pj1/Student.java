@@ -39,7 +39,7 @@ package swdesign.uit.pj1;
 
 public class Student {
     private String studentId;
-    private int nationalID;
+    private String nationalID;
     private String name;
     private double dateOfBirth;
 
@@ -47,7 +47,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(String studenId, int nationalId, String name, double dateOfBirth) {
+    public Student(String studenId, String nationalId, String name, double dateOfBirth) {
         this.studentId = studenId;
         this.nationalID = nationalId;
         this.name = name;
@@ -62,11 +62,11 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public int getNationalID() {
+    public String getNationalID() {
         return nationalID;
     }
 
-    public void setNationalID(int nationalID) {
+    public void setNationalID(String nationalID) {
         this.nationalID = nationalID;
     }
 
