@@ -29,13 +29,12 @@
 // -dateOfBirth
 
 // Student Management
-// POST		|/student				:create a new student.                                      x
-// GET		|/student/id			:get a student by student id.                               x
-// DELETE	|/student/id			:delete a student by student id.                            x
-// PUT		|/student/id			:update a student by student id.                            x
-// GET		|/student/national_id	:(search) get a student by national ID.
-// GET		|/students/name			:(search) get a list of students by name (partial match).
-// GET		|/students				:get all students.
+// POST		|/student				        :create a new student.                                      x
+// GET		|/student/id		        	:get a student by student id.                               x
+// DELETE	|/student/id			        :delete a student by student id.                            x
+// PUT		|/student/id			        :update a student by student id.                            x
+// GET		|/student/national/nationalId	:(search) get a student by national ID.
+// GET		|/students				        :get all students.
 package swdesign.uit.pj1;
 
 import java.util.List;
@@ -161,30 +160,8 @@ public class StudentController {
             return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         }
     }
-    
+
     @GetMapping("/students")
-    public ResponseEntity<ApiResponse<List<Student>>> getStudents(@RequestParam(name = "name", required = false) String name) {
-    
-        List<Student> students;
-    String message;
-
-    if (name != null && !name.isEmpty()) {
-        students = studentService.getStudentsByName(name);
-        message = "";
-    } else {
-        students = studentService.getAllStudents();
-        message = "";
-    }
-    ApiResponse<List<Student>> response = new ApiResponse<>(
-            HttpStatus.OK.value(),
-            message,
-            students);
-    return ResponseEntity.ok(response);
-}
-
-
-
-    @GetMapping("/students/all")
     public ResponseEntity<ApiResponse<List<Student>>> getAllStudents() {
         List<Student> students = studentService.getAllStudents();
         

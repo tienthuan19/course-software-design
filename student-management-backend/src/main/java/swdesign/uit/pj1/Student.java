@@ -1,3 +1,4 @@
+
 //                         _ooOoo_
 //                        o8888888o
 //                        88" . "88
@@ -28,13 +29,12 @@
 // -dateOfBirth
 
 // Student Management
-// POST		|/student				:create a new student.
-// GET		|/student/id			:get a student by student id.
-// DELETE	|/student/id			:delete a student by student id.
-// PUT		|/student/id			:update a student by student id.
-// GET		|/student/national_id	:(search) get a student by national ID.
-// GET		|/students/name			:(search) get a list of students by name (partial match).
-// GET		|/students				:get all students.
+// POST		|/student				        :create a new student.                                      x
+// GET		|/student/id		        	:get a student by student id.                               x
+// DELETE	|/student/id			        :delete a student by student id.                            x
+// PUT		|/student/id			        :update a student by student id.                            x
+// GET		|/student/national/nationalId	:(search) get a student by national ID.
+// GET		|/students				        :get all students.
 package swdesign.uit.pj1;
 
 public class Student {
