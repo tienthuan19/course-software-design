@@ -1,0 +1,5 @@
+Class: 
+Drink (  + Money)
+OrderItem (Dink + Amount)
+Bill (Order + SumMoney)
+
