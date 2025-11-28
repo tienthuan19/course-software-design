@@ -3,3 +3,16 @@ Drink (  + Money)
 OrderItem (Dink + Amount)
 Bill (Order + SumMoney)
 
+Json: create a order.
+{
+  "items": [
+    {
+      "drinkId": 1,
+      "quantity": 2
+    },
+    {
+      "drinkId": 3,
+      "quantity": 1
+    }
+  ]
+}
