@@ -17,7 +17,6 @@
 //           \  \ `-.   \_\_`. _.'_/_/  -' _.' /
 // ===========`-.`___`-.__\ \___  /__.-'_.'_.-'================
 //                       `=--=-'
-//       CHĂM NGOAN - HỌC GIỎI - CODE ĐẸP - KHÔNG BUG 
 
 
 //Hashmap<String, Student>
@@ -39,9 +38,9 @@ package swdesign.uit.pj1;
 
 public class ApiResponse<T> {
 
-    private int status; // Sẽ là mã HTTP (ví dụ: 200, 404)
-    private String message; // Thông điệp (ví dụ: "Success", "Student not found")
-    private T data; // Dữ liệu bạn muốn trả về (kiểu T)
+    private int status; 
+    private String message;
+    private T data; 
 
     public ApiResponse() {
     }
